@@ -12,9 +12,13 @@ int main()
 	cout << "введiть натуральне число:\t";
 	cin >> number;
 
-	while (number%a == 0)
+	while (a <= number)
 	{
+		if (number%a == 0)
+		{
 		cout << number << endl;
+		
+		}
 		a++;
 	}
 
