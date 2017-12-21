@@ -12,15 +12,21 @@ int main()
 	cout << "введiть натуральне число:\t";
 	cin >> number;
 
-	for (; a <= number;++a)
+	while (number%a == 0)
 	{
-
-		if (number %a == 0)
-		{
-			cout << number << ", ";
-		}
-		
+		cout << number << endl;
+		a++;
 	}
 
+	//for (a = 1; a <= number; ++a)
+	//{
+
+	//	if (number%a == 0)
+	//	{
+	//		cout << number << ", ";
+	//	}
+	//	
+	//}
+	cout << endl;
 	system("pause");
 }
