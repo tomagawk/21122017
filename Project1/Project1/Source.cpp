@@ -7,30 +7,19 @@ int main()
 {
 	setlocale(LC_ALL, "");
 
-	int number = 0, a = 1, b = 1;
+	int number = 0, a = 1;
 
 	cout << "введiть натуральне число:\t";
 	cin >> number;
 
 	while (a <= number)
 	{
-		if (number%a == 0)
+		if (number % a== 0)
 		{
-		cout << number << endl;
-		
+		cout << a << endl;
 		}
 		a++;
 	}
-
-	//for (a = 1; a <= number; ++a)
-	//{
-
-	//	if (number%a == 0)
-	//	{
-	//		cout << number << ", ";
-	//	}
-	//	
-	//}
 	cout << endl;
 	system("pause");
 }
